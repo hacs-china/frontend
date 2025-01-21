@@ -1,0 +1,174 @@
+{
+  "common": {
+    "add": "新增",
+    "cancel": "取消",
+    "download": "下载",
+    "ignore": "忽略",
+    "learn_more": "学习更多",
+    "navigate": "导航",
+    "reload": "重载",
+    "remove": "移除",
+    "repositories": "仓库",
+    "repository": "仓库",
+    "save": "保存",
+    "show": "显示详情",
+    "type": {
+      "integration": "集成",
+      "plugin": "仪表盘",
+      "theme": "主题",
+      "python_script": "Python脚本",
+      "appdaemon": "AppDaemon",
+      "netdaemon": "NetDaemon",
+      "template": "模板"
+    }
+  },
+  "dashboard": {
+    "no_data": "当前筛选下找不到匹配的仓库"
+  },
+  "column": {
+    "actions": "快捷操作",
+    "name": "仓库名称",
+    "downloads": "下载数",
+    "stars": "星标数",
+    "icon": "图标",
+    "installed_version": "已安装版本",
+    "available_version": "可用版本",
+    "status": "状态",
+    "type": "类型",
+    "last_updated": "最后更新"
+  },
+  "confirm": {
+    "home_assistant_version_not_correct": "您的 Home Assistant 版本为'{haversion}'，但是这个仓库最低需要 '{minversion}' 才能安装"
+  },
+  "my": {
+    "not_supported": "This redirect is not supported. Check the {link} for the supported redirects and the version they were introduced.",
+    "faq_link": "My Home Assistant FAQ",
+    "error": "未知错误",
+    "repository_not_found": "仓库 {repository} 未找到",
+    "add_repository_title": "添加自定义仓库",
+    "add_repository_description": "这将添加自定义仓库 '{repository}' 到HACS， 确定添加吗？"
+  },
+  "dialog_about": {
+    "integration_version": "集成版本",
+    "frontend_version": "前端版本",
+    "downloaded_repositories": "已下载的仓库",
+    "useful_links": "相关链接"
+  },
+  "dialog_overview": {
+    "title": "管理概览表",
+    "description": "调整概览表中显示的内容以满足您的需求",
+    "sections": {
+      "filters": "更改筛选条件",
+      "behaviour": "更改概览的行为"
+    },
+    "status": "状态",
+    "type": "类型",
+    "columns": "数据列"
+  },
+  "dialog_custom_repositories": {
+    "title": "自定义仓库",
+    "url_placeholder": "添加自定义仓库链接",
+    "type": "类型",
+    "no_repository": "仓库无效",
+    "no_type": "请选择类型"
+  },
+  "dialog_download": {
+    "type": "类型",
+    "url": "URL",
+    "will_download_version": "版本 {ref} 将被下载",
+    "will_download_commit": "Commit {ref} 将被下载",
+    "different_version": "需要切换其他版本？",
+    "fetching_releases": "抓取版本中...",
+    "no_releases": "未找到任何版本",
+    "release": "发布版",
+    "release_warning": "不建议使用此功能进行回滚，请恢复备份。",
+    "restart": "请记住您需要重启 Home Assistant 才能使更新的集成生效",
+    "selector_note": "未来的版本中将移除版本选择器。如果您需要安装特定版本，可以通过使用`update`实体服务(action)的调用来实现。",
+    "note_downloaded": "下载后，文件将位于 {location}",
+    "lovelace_instruction": "下载完成后，由于您使用yaml管理Lovelace，您需要手动添加这些设置的资源:"
+  },
+  "dialog_info": {
+    "version_installed": "已下载版本",
+    "open_issues": "待关闭缺陷",
+    "stars": "星标数",
+    "downloads": "下载数",
+    "author": "作者",
+    "no_info": "开发者没有为此仓库提供更多信息",
+    "open_repo": "打开仓库主页",
+    "download": "通过HACS下载此仓库"
+  },
+  "repository_card": {
+    "dismiss": "dismiss",
+    "dismiss_new": "忽略新仓库",
+    "information": "信息",
+    "new_repository": "新仓库",
+    "not_loaded": "未加载",
+    "open_issue": "报告缺陷",
+    "open_source": "查看源码",
+    "pending_restart": "等待重启",
+    "pending_update": "等待更新",
+    "redownload": "重新下载",
+    "report": "请求移除",
+    "update_information": "更新信息"
+  },
+  "repository_status": {
+    "pending-restart": "等待重启",
+    "pending-upgrade": "等待更新",
+    "installed": "已下载",
+    "new": "新仓库",
+    "default": "可下载"
+  },
+  "menu": {
+    "about": "关于HACS",
+    "custom_repositories": "自定义仓库",
+    "open_issue": "报告缺陷",
+    "dismiss": "忽略新仓库",
+    "documentation": "文档"
+  },
+  "dialog": {
+    "reload": {
+      "description": "您需要重新刷新浏览器以更新前端资源。",
+      "confirm": "确定现在操作？"
+    },
+    "remove": {
+      "title": "移除",
+      "message": "确定要移除 {name} 吗？"
+    },
+    "configured": {
+      "title": "集成已配置",
+      "message": "{name} 这个集成已在HA配置或被忽略，如需从HACS移除，你需要先移除集成配置。",
+      "confirm": "前往集成页面"
+    }
+  },
+  "ui": {
+    "components": {
+      "subpage-data-table": {
+        "filters": "筛选条件",
+        "show_results": "显示 {number} 条结果",
+        "clear_filter": "清空筛选",
+        "close_filter": "关闭筛选",
+        "exit_selection_mode": "退出选择模式",
+        "enter_selection_mode": "进入选择模式",
+        "sort_by": "根据 {sortColumn} 排序",
+        "group_by": "根据 {groupColumn 分组}",
+        "dont_group_by": "无分组",
+        "collapse_all_groups": "折叠全部",
+        "expand_all_groups": "展开全部",
+        "select": "选择",
+        "selected": "已选择 {selected}",
+        "select_all": "选择全部",
+        "select_none": "取消选择",
+        "settings": "自定义表格"
+      },
+      "data-table": {
+        "settings": {
+          "header": "自定义",
+          "hide": "隐藏列 {title}",
+          "show": "显示列 {title}",
+          "done": "完成",
+          "restore": "恢复默认"
+        }
+      }
+    }
+  }
+}
