@@ -33,7 +33,7 @@ gulp.task("generate-translations", async function (task) {
   await fs.mkdir(`${paths.build_dir}/translations`, { recursive: true });
   const defaultTranslation = recursiveFlatten(
     "",
-    fs.readJSONSync(`${paths.translations_src}/en.json`, "utf-8")
+    fs.readJSONSync(`${paths.translations_src}/zh-Hans.json`, "utf-8")
   );
 
   for (const language of fs.readdirSync(paths.translations_src)) {
