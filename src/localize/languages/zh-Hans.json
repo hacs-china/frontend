@@ -150,7 +150,7 @@
         "exit_selection_mode": "退出选择模式",
         "enter_selection_mode": "进入选择模式",
         "sort_by": "根据 {sortColumn} 排序",
-        "group_by": "根据 {groupColumn 分组}",
+        "group_by": "根据 {groupColumn} 分组",
         "dont_group_by": "无分组",
         "collapse_all_groups": "折叠全部",
         "expand_all_groups": "展开全部",
