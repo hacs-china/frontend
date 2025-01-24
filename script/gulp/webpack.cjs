@@ -120,7 +120,7 @@ gulp.task("webpack-watch-app", () => {
       ? bothBuilds(createHacsConfig, { isProdBuild: false })
       : createHacsConfig({ isProdBuild: false, latestBuild: true })
   ).watch({ poll: isWsl }, doneHandler());
-  gulp.watch(path.join(paths.translations_src, "en.json"), gulp.series("generate-translations"));
+  gulp.watch(path.join(paths.translations_src, "zh-Hans.json"), gulp.series("generate-translations"));
 });
 
 gulp.task("webpack-prod-app", () =>
