@@ -37,7 +37,7 @@ jobs:
 
       - name: Upload dists
         if: ${{ env.DISCORD_WEBHOOK != '' }}
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4.6.0
         with:
           name: translations
           path: ./translations
@@ -48,17 +48,17 @@ jobs:
     runs-on: ubuntu-latest
     needs: translations
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4.2.2
         with:
           submodules: recursive
 
       - name: Set up Python
-        uses: actions/setup-python@v5.2.0
+        uses: actions/setup-python@v5.4.0
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Set up Node ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v4.0.3
+        uses: actions/setup-node@v4.2.0
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: yarn
@@ -100,7 +100,7 @@ jobs:
         run: python setup.py sdist bdist_wheel
 
       - name: Upload dists
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4.6.0
         with:
           name: "dist"
           path: "dist/"
@@ -126,15 +126,15 @@ jobs:
 
       - name: Publish dists to PyPI
         if: ${{ env.DISCORD_WEBHOOK != '' }}
-        uses: pypa/gh-action-pypi-publish@8a08d616893759ef8e1aa1f2785787c0b97e20d6 # v1.10.0
+        uses: pypa/gh-action-pypi-publish@76f52bc884231f62b9a034ebfe128415bbaabdfc # v1.12.4
 
       - name: Attest
-        uses: actions/attest-build-provenance@6149ea5740be74af77f260b9db67e633f6b0a9a1 #v1.4.2
+        uses: actions/attest-build-provenance@520d128f165991a6c774bcb264f323e3d70747f4 #v2.2.0
         with:
           subject-path: dist/*
 
       - name: Upload release assets
-        uses: softprops/action-gh-release@v2.0.8
+        uses: softprops/action-gh-release@v2.2.1
         with:
           files: dist/*
 
